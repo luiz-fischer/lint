@@ -11,6 +11,7 @@ public class ExampleService implements Service {
     public void update(Routing.Rules rules) {
         rules
             .get("/", this::getDefaultMessageHandler);
+            batata
     }
 
     private void getDefaultMessageHandler(ServerRequest request, ServerResponse response) {
